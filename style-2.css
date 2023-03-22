@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Josefin+Sans:wght@600&family=Rock+Salt&family=Syne&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+h1 {
+  font-family: 'Fredoka One', cursive;
+  margin: 0;
+  padding: 1.8rem;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+
+}
+p{
+  text-align: center;
+  font-size: 34px;
+  font-family: 'Syne', sans-serif;
+}
+#restart-button{
+  position: absolute;
+  left: 45%;
+  font-size: 24px;
+  padding-top: 7px;
+}
+.profile-btn{
+  position:absolute;
+  right: 3%;
+  padding-right: 15px;
+  margin-left:20px;
+  font-size: 15px;
+  border-radius: 30px;
+}
+button {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #ddd;
+  color: black;
+}
+button:hover {
+  border: 2px solid rgb(138, 43, 226);
+}
+.btn-game img{
+  position: absolute;
+  width: 40px;
+  left: 2%;
+}
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  margin-left: 9%;
+  margin-right: 7%;
+  margin-top: 5%;
+}
+
+.card {
+  background-color: black;
+  border-radius: 10px;
+  height: 295px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.card img {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+.flipped {
+  transform: rotateY(360deg);
+  transition: transform 1s ease-in-out;
+}
+
+.progress {
+  margin-top: 20px;
+}
+
+#restart-button {
+  margin-top: 20px;
+}

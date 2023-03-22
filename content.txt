@@ -1,0 +1,22 @@
+function playPreviousVideo() {
+  const posters = posterContainer.querySelectorAll('.poster');
+  currentVideoIndex = (currentVideoIndex - 1 + posters.length) % posters.length;
+  const poster = posters[currentVideoIndex];
+  playVideo({ target: poster });
+}
+
+function playNextVideo() {
+  const posters = posterContainer.querySelectorAll('.poster');
+  currentVideoIndex = (currentVideoIndex + 1) % posters.length;
+  const poster = posters[currentVideoIndex];
+  playVideo({ target: poster });
+}
+-Extract the posters NodeList into a variable, to avoid repeating the same code multiple times.
+-Use the modulo operator to wrap around the index when it goes below 0 or exceeds the length of the posters array.
+-Combine the index update and poster selection into a single step, to reduce the number of lines of code and avoid off-by-one errors.
+
+
+------------liked movies
+This code creates a set to store the titles of the movies that the user liked. It adds a click event listener to each like button, which adds or removes the title of the movie from the set, and calls the updateLikedMovies function. This function generates an HTML list of the liked movie titles, and sets it as the data-liked-movies attribute of the profile button. It also adds mouseenter and mouseleave event listeners to the profile button, which show or hide the list of liked movies, respectively.
+
+You can add this code to the bottom of your HTML file, just before the closing </body> tag.

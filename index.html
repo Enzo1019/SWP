@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Local Video Player</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>
+		<a href="game.html" class="btn-game"><img src="card-game.png" alt=""></a>
+		Video Player
+		<button class="profile-btn">
+		<!-- <img src="port.png" /> -->
+		Created by
+		<span style="font-family: 'Rock Salt', cursive;">Chunziye ZHANG</span>
+		</button>
+	</h1>
+	<div class="progress-bar-container">
+		<div class="progress-bar"></div>
+	</div>
+	<div id="playing">
+		<!-- <h2>Playing now:</h2> -->
+  	<p>Fast and Furious</p>
+	</div>
+	<div id="video-container">
+		<video id="video-player" controls>
+			<source src="" type="video/mp4">
+		</video>
+		<button id="previous-button" class="function-button previous-button">Previous</button>
+		<button id="next-button" class="function-button next-button">Next</button>
+		<button id="volume-button" class="function-button volume-button">Mute</button>
+		<button id="mode-button" class="function-button mode-button">Turn off the light</button>
+
+	</div>
+	<div class="middle-class">
+		<button id="volume-up-button" class="volume-up-button">
+			<img style="width:40px" src="volume-up.png" alt="">
+		</button>
+		<button id="speed-button" class="function-button speed-button">Speed</button>
+		<button id="volume-down-button" class="volume-down-button">
+			<img style="width:40px" src="volume-down.png" alt="">
+		</button>
+	</div>
+
+
+	<div id="poster-container">
+		<div class="poster-holder" data-trailer-src="fastandfurious-trailer.mov">
+			<img class="poster" src="fastandfurious-poster.jpg" data-trailer-src="fastandfurious-trailer.mov">
+			<div class="poster-overlay">
+				<h2 class="poster-title">Fast and Furious</h2>
+				<p class="poster-description">Fast & Furious is a media franchise centered on a series of action films that are largely concerned with family, heists, spies, and street racing.</p>
+				<button class="like-button"></button>
+			</div>
+		</div>
+		<div class="poster-holder" data-trailer-src="Godfather-trailer.mov">
+			<img class="poster" src="godfather-poster.jpg" data-trailer-src="Godfather-trailer.mov">
+			<div class="poster-overlay">
+				<h2 class="poster-title">Godfather</h2>
+				<p class="poster-description">The Godfather is a 1972 American crime film directed by Francis Ford Coppola, who co-wrote the screenplay with Mario Puzo, based on Puzo's best-selling 1969.</p>
+				<button class="like-button"></button>
+			</div>
+		</div>
+		<div class="poster-holder" data-trailer-src="huntforthewilderpeople-trailer.mov">
+			<img class="poster" src="huntforthewilderpeople-poster.jpg" data-trailer-src="huntforthewilderpeople-trailer.mov">
+			<div class="poster-overlay">
+				<h2 class="poster-title">Hunt wilderpeople</h2>
+				<p class="poster-description">Hunt for the Wilderpeople is a 2016 New Zealand adventure comedy-drama film written and directed by Taika Waititi, whose screenplay was based on the book Wild Pork and Watercress by Barry Crump.</p>
+				<button class="like-button"></button>
+			</div>
+		</div>
+		<div class="poster-holder" data-trailer-src="meninblack3-trailer.mov">
+			<img class="poster" src="meninblack3-poster.jpg" data-trailer-src="meninblack3-trailer.mov">
+			<div class="poster-overlay">
+				<h2 class="poster-title">Men in black 3</h2>
+				<p class="poster-description">Men in Black 3 (stylized as MIB³) is a 2012 American science fiction action comedy film based on the Marvel Comics series of a similar name. It is the sequel to Men in Black (1997) and Men in Black II (2002) and third installment in the Men in Black franchise.</p>
+				<button class="like-button"></button>
+			</div>
+		</div>
+		<div class="poster-holder" data-trailer-src="sherlockholmes2-trailer.mov">
+			<img class="poster" src="sherlockholmes2-poster.jpg" data-trailer-src="sherlockholmes2-trailer.mov">
+			<div class="poster-overlay">
+				<h2 class="poster-title">Sherlock Holmes 2</h2>
+				<p class="poster-description">Sherlock Holmes: A Game of Shadows is a 2011 period mystery action film and the sequel to the 2009 film Sherlock Holmes, both which star Robert Downey Jr. as the titular character.</p>
+				<button class="like-button"></button>
+			</div>
+		</div>
+		<!-- Add more poster images and their corresponding video files here -->
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
